@@ -14,7 +14,7 @@ class Post(models.Model):#models.Model means that the Post is a Django Model,
 
 
     def publish(self):
-        self.published_date = timezone.now
+        self.published_date = timezone.now()
         self.save()
 
 
